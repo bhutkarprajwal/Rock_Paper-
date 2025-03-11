@@ -1,59 +1,89 @@
-# Rockpaper
+# Rock-Paper-Scissors Game
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
+This is a simple Rock-Paper-Scissors game developed using **HTML**, **CSS**, and **Angular**.
 
-## Development server
+## Features
+- User can select Rock, Paper, or Scissors by clicking on the respective images.
+- The computer randomly selects its move.
+- The game declares the winner for each round.
+- Scoreboard to track the user's and computer's scores.
+- "Reset" button to restart the game.
 
-To start a local development server, run:
-
-```bash
-ng serve
+## Project Structure
+```
+/rock-paper-scissors-game
+├── src
+│   ├── app
+│   │   ├── app.component.html
+│   │   ├── app.component.ts
+│   │   ├── app.component.css
+│   │   └── app.module.ts
+│   ├── assets
+│   │   ├── rock.jpeg
+│   │   ├── paper.png
+│   │   └── scissor.jpg
+│   └── index.html
+├── README.md
+└── package.json
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## How to Run
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-url>
+   cd rock-paper-scissors-game
+   ```
 
-## Code scaffolding
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+3. **Run the Angular Application**
+   ```bash
+   ng serve
+   ```
 
-```bash
-ng generate component component-name
-```
+4. **Open the Game**
+   Go to [http://localhost:4200](http://localhost:4200) in your browser.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Gameplay Instructions
+- Click on one of the following images to make your move:
+  - **Rock**
+  - **Paper**
+  - **Scissors**
+- The computer will randomly select its move.
+- The result will display who won the round.
+- The scoreboard will keep track of the scores.
+- Click the **Reset** button to reset the game and scores.
 
-```bash
-ng generate --help
-```
+## Code Overview
+### HTML Structure (`app.component.html`)
+- Displays game choices (Rock, Paper, Scissors)
+- Shows the computer's choice and result
+- Displays the scoreboard and Reset button
 
-## Building
+### Logic (`app.component.ts`)
+- `Myfunc()` function handles user moves and compares them with the computer's choice.
+- `ResetGame()` function resets scores and clears results.
 
-To build the project run:
+### Styling (`app.component.css`)
+- The `.container` and `.card` classes are used to ensure proper layout and styling.
 
-```bash
-ng build
-```
+## Technologies Used
+- **Angular** for application logic and data binding
+- **HTML** for structure
+- **CSS** for styling
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Future Enhancements
+- Add animations for better user experience
+- Implement additional game modes or score history
+- Improve UI design for better aesthetics
 
-## Running unit tests
+## Author
+**Prajwal Bhutkar**
+- [GitHub](https://github.com/bhutkarprajwal)
+- [LinkedIn](https://www.linkedin.com/in/prajwal-bhutkar22/)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Enjoy the game! 🚀
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
